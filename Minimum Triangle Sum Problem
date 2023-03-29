@@ -1,0 +1,40 @@
+Description
+–
+Given a 𝑡𝑟𝑖𝑎𝑛𝑔𝑙𝑒 array, return the minimum path sum from top to
+bottom.
+–
+For each step, you may move to an adjacent number of the row
+below. More formally, if you are on index 𝑖 on the current row, you
+may move to either index 𝑖 or index 𝑖 + 1 on the next row.
+Constrains:
+- 1<= triangle.length <=200
+- triangle[0].length ==1
+- triangle[i].length == triangle[i-1].length+1
+10^4 <= triangle[i][j]<=10^4
+■  Input
+Each line represents each row of the triangle.
+■ Output
+The minimum path sum from top to bottom.
+Eg:
+Input:
+4
+2
+3,4
+6,5,7
+4,1.8,3
+Ouptut: 
+11
+
+Input:
+3
+5
+6,2
+1,8,9
+Output:
+12
+
+Input: 
+1
+-10
+Output:
+-10
