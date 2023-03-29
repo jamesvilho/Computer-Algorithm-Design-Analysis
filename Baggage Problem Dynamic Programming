@@ -1,0 +1,31 @@
+Description:
+
+Tom is planning a trip. His luggage can hold at most M kg. He has N items weighing W1, W2, W3, ..., and Wn. 
+The values of the items are V1, V2, V3, ..., and Vn. 
+
+Please give the maximum value of the items he can take.
+
+Constraints:
+
+M ∈ [1, 200]
+
+N ∈ [1, 30]
+
+Input:
+
+The first line includes two integers M and N, indicating the maximum capacity of the luggage and the number of items.
+
+Lines 2 to N+1: each line contains two integers Wi, Vi, indicating the weight and the value of it. 
+
+Output:
+
+Print an integer indicating the maximum value of items he can take.
+
+input:
+10 4
+2 1
+3 3
+4 5
+7 9
+output:
+12
