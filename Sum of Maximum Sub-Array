@@ -1,0 +1,48 @@
+Given an integer array nums, find the contiguous subarray (containing at least one number) which has the largest sum and return its sum.
+A subarray is a contiguous part of an array.
+
+Follow up: If you have figured out the O(n) solution, try coding another solution using the divide and conquer approach.
+
+Input
+The first line of the input is an integer n, which is the length of  array. 
+
+Each of the next n lines contains a single integer in the array.
+
+Output
+The largest sum of the contiguous subarray.
+input:
+5
+5
+4
+-1
+7
+8
+output:
+23
+-------------------------------------------------------------------------------------------------------
+
+int maxSumSubArray(int* a,int& n){
+    int maxsum = 0;
+    int currsum = 0;
+    for(int i =0;i<n;i++)
+    {
+        currsum+=a[i];
+        if(currsum>maxsum)
+        maxsum=currsum;
+        if(currsum<0)
+        currsum=0;
+    }
+return maxsum;
+}
+
+int main()
+{
+    int n;
+    cin>>n;
+    int arr[n];
+    for(int i =0;i<n;i++)
+    cin>>arr[i];
+    int x = maxSumSubArray(arr,n);
+    cout<<x;
+
+}
